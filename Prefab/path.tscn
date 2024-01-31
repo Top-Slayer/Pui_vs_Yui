@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmr7ufkumk6uc"]
+
+[ext_resource type="Texture2D" uid="uid://dfdo2ra8rn50h" path="res://Sprite/icon.svg" id="1_slpc6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ia1og"]
+texture = ExtResource("1_slpc6")
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kkhl0"]
+sources/1 = SubResource("TileSetAtlasSource_ia1og")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qgo43"]
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_kkhl0")
+format = 2
+layer_0/tile_data = PackedInt32Array(262151, 65537, 1, 262152, 65537, 1, 262153, 65537, 1, 262154, 65537, 1, 262155, 65537, 1, 262156, 65537, 1, 262157, 65537, 1, 262158, 65537, 1, 262159, 65537, 1, 262160, 65537, 1, 262161, 65537, 1, 262162, 65537, 1, 262163, 65537, 1, 327700, 65537, 1, 327701, 65537, 1, 327702, 65537, 1, 393238, 65537, 1, 458774, 65537, 1, 524310, 65537, 1, 589846, 65537, 1, 655381, 65537, 1, 720916, 65537, 1, 786451, 65537, 1, 851986, 65537, 1, 851985, 65537, 1, 917520, 65537, 1, 983055, 65537, 1, 1048590, 65537, 1, 1048589, 65537, 1, 1114124, 65537, 1, 1114123, 65537, 1, 1179658, 65537, 1, 1245193, 65537, 1, 1245192, 65537, 1, 1245191, 65537, 1, 1179655, 65537, 1, 1114118, 65537, 1, 1048582, 65537, 1, 983046, 65537, 1, 917510, 65537, 1, 851974, 65537, 1, 786438, 65537, 1, 720902, 65537, 1, 655366, 65537, 1, 589831, 65537, 1, 524295, 65537, 1, 458759, 65537, 1, 393223, 65537, 1, 327687, 65537, 1, 196617, 65537, 1, 196618, 65537, 1, 196619, 65537, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_slpc6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6.5, 6.5)
+shape = SubResource("RectangleShape2D_qgo43")

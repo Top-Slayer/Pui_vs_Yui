@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1xffjcg6pdja"]
+
+[ext_resource type="Script" path="res://Script/Player_Yui.gd" id="1_m7756"]
+[ext_resource type="Texture2D" uid="uid://bsd4n2fh2hxy8" path="res://Sprite/Yui.svg" id="2_cos4j"]
+[ext_resource type="PackedScene" uid="uid://cy2hbravfp2lp" path="res://Prefab/meat.tscn" id="3_iihk7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fdt0j"]
+radius = 10.8
+height = 35.516
+
+[node name="Player-Yui" type="CharacterBody2D"]
+script = ExtResource("1_m7756")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cos4j")
+offset = Vector2(0, -104.165)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -88.61)
+scale = Vector2(5, 5)
+shape = SubResource("CapsuleShape2D_fdt0j")
+
+[node name="Meat" parent="." instance=ExtResource("3_iihk7")]
+position = Vector2(130, -89)

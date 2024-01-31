@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy2hbravfp2lp"]
+
+[ext_resource type="Script" path="res://Script/Meat.gd" id="1_7galx"]
+[ext_resource type="Texture2D" uid="uid://lnrmcnd5wn7e" path="res://Sprite/Meat.png" id="1_647gx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xf64u"]
+radius = 16.9891
+height = 54.1802
+
+[node name="Meat" type="RigidBody2D"]
+script = ExtResource("1_7galx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0566406, 0.0566406)
+texture = ExtResource("1_647gx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.53498
+shape = SubResource("CapsuleShape2D_xf64u")

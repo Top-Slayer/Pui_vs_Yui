@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2phjciynxo81"]
+
+[ext_resource type="PackedScene" uid="uid://d1xffjcg6pdja" path="res://Prefab/Player-Yui.tscn" id="1_v0lmm"]
+[ext_resource type="PackedScene" uid="uid://bmr7ufkumk6uc" path="res://Prefab/path.tscn" id="2_f0i8a"]
+
+[node name="Main scene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_v0lmm")]
+position = Vector2(573, 167)
+
+[node name="Node2D" parent="." instance=ExtResource("2_f0i8a")]
+position = Vector2(518, 530)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_f0i8a")]
+position = Vector2(659, 530)
+
+[node name="Node2D3" parent="." instance=ExtResource("2_f0i8a")]
+position = Vector2(797, 424)
